@@ -1,5 +1,5 @@
 import pyttsx3
-def voiceChange():
+def voiceChangeFemale():
     eng = pyttsx3.init()
     voice = eng.getProperty('voices') 
     eng.setProperty('voice', voice[1].id)
@@ -7,5 +7,12 @@ def voiceChange():
     eng.say(cmd)
     eng.runAndWait()
 
+def voiceChangeMale():
+    tesp = pyttsx3.init()
+    res = input("Enter the text: ")
+    tesp.say(res)
+    tesp.runAndWait()
+
 if __name__ == "__main__":
-    voiceChange()
+    voiceChangeFemale()
+    voiceChangeMale()
