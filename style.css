@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 body{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #1bbcc8;
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,1) 57%, rgba(43,6,112,1) 100%);
 }
 ::selection{
   color: #fff;
@@ -95,11 +94,4 @@ form button{
 }
 form button:hover{
   background: #4534fe;
-}
-
-@media(max-width: 400px){
-  .wrapper{
-    max-width: 345px;
-    width: 100%;
-  }
 }
